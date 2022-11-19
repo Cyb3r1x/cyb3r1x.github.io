@@ -1,0 +1,411 @@
+body {
+  margin:0;
+  background-color: black;
+  overflow: hidden;
+}
+
+html * {
+  font-family: 'xxx';
+}
+
+#three_canvas {
+  position: absolute;
+  z-index: 1;
+}
+
+#hydra_canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sc_icon {
+    width: 35px;
+    height: 35px;
+    border:0;
+    align-items: center;
+    margin-top: 10px;
+    /* filter: drop-shadow(0px 0px 0px  rgba(100,100,100,0.2)) invert(75%) contrast(1.5); */
+}
+
+.audio {
+  visibility: hidden;
+}
+
+.camera_audio {
+  visibility: hidden;
+}
+
+.load_page_audio {
+  visibility: hidden;
+}
+
+.onloadpage {
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-family: 'xxx';
+  display: grid;
+  font-size: 2.5rem;
+  grid-template-columns: 550px auto;
+  margin: 12px;
+  filter: drop-shadow(0px 0px 5px  rgba(100,100,100,1)) invert(75%) contrast(1.5);
+}
+
+a.active {
+  text-decoration: none;
+  color: red;
+  font-family: 'xxx';
+}
+
+
+.load_page{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:black;
+  z-index: 7;
+  visibility: visible;
+  transition: visibility 1s linear, opacity 1s;
+  text-align: center;
+}
+
+.load_page a{
+  color:rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.load_page.active{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.startpage_banner {
+  font-size: 130px;
+  position: absolute;
+  top: 20%;
+  left: 28%;
+}
+
+.load_page a::before{
+  content: attr(data1);
+  position: absolute;
+  margin-left: 35px;
+  opacity: 0.5;
+  color: black;
+  animation: glitch-1 0.5s linear infinite;
+}
+
+.load_page a::after{
+  content: attr(data2);
+  position: absolute;
+  top: 150px;
+  opacity: 0.5;
+  color: black;
+  animation: glitch-1 0.2s linear infinite reverse;
+}
+
+@keyframes glitch-1 {
+  0% {
+    clip: rect(129px, auto, 36px, 30px);
+  }
+  5% {
+    clip: rect(36px, auto, 4px, 30px);
+  }
+  10% {
+    clip: rect(85px, auto, 66px, 30px);
+  }
+  15% {
+    clip: rect(91px, auto, 91px, 30px);
+  }
+  20% {
+    clip: rect(148px, auto, 138px, 30px);
+  }
+  25% {
+    clip: rect(38px, auto, 122px, 30px);
+  }
+  30% {
+    clip: rect(69px, auto, 54px, 30px);
+  }
+  35% {
+    clip: rect(98px, auto, 71px, 30px);
+  }
+  40% {
+    clip: rect(146px, auto, 34px, 30px);
+  }
+  45% {
+    clip: rect(134px, auto, 43px, 30px);
+  }
+  50% {
+    clip: rect(102px, auto, 80px, 30px);
+  }
+  55% {
+    clip: rect(119px, auto, 44px, 30px);
+  }
+  60% {
+    clip: rect(106px, auto, 99px, 30px);
+  }
+  65% {
+    clip: rect(141px, auto, 74px, 30px);
+  }
+  70% {
+    clip: rect(20px, auto, 78px, 30px);
+  }
+  75% {
+    clip: rect(133px, auto, 79px, 30px);
+  }
+  80% {
+    clip: rect(78px, auto, 52px, 30px);
+  }
+  85% {
+    clip: rect(35px, auto, 39px, 30px);
+  }
+  90% {
+    clip: rect(67px, auto, 70px, 30px);
+  }
+  95% {
+    clip: rect(71px, auto, 103px, 30px);
+  }
+  100% {
+    clip: rect(83px, auto, 40px, 30px);
+  }
+}
+
+
+.banner{
+  position: fixed;
+  width: 300px;
+  bottom: 3%;
+  left: 8.4%;
+  border: 1px solid rgba(0, 100, 0, 0.8);
+  border-radius: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.banner .track_name {
+  display: inline-block;
+  text-align: center;
+  width:100%;
+  z-index: 5;
+  font-size: 3rem;
+  margin-left: 100%;
+  text-shadow: 2px 2px black;
+  animation: sliding 15s linear infinite;
+}
+
+@keyframes sliding {
+  0%{
+    transform:translate(0,0);
+  }
+  100%{
+    transform: translate(-400%, 0);
+  }
+}
+
+/* .tracklist {
+  position: absolute;
+  visibility:hidden;
+} */
+
+.tracklist {
+  position: absolute;
+  visibility:visible;
+  z-index: 5;
+  text-align: center;
+  margin-left: 45%;
+  top: 10%;
+  font-size: 3rem;
+  list-style-type:none;
+}
+
+.freqMonitor {
+  background-color: rgba(0,0,0,1);
+  top:2%;
+  left: 80%;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  z-index: 5;
+  border-radius: 100%;
+    box-shadow: 0px 10px 10px rgba(100,100,100,0.4);
+}
+
+.player_ {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  z-index: 5;
+}
+
+.player_ .media_ {
+  width: 700px;
+  height: 600px;
+  position: fixed;
+  background-image: url('/img/device2.0.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#hydra_canvas_2 {
+  width:259px;
+  height:260px;
+  border-radius: 100%;
+  position: fixed;
+  top: 171px;
+  left: 135px;
+  z-index: 5;
+  background-color: rgba(0,255,0,0);
+  filter: drop-shadow(0px 0px 14px  rgba(100,100,100,1)) invert(75%) contrast(1.5);
+}
+
+.play_stop_button{
+  width: 50px;
+  height: 100px;
+  background: rgba(255,0,0,0.1);
+  position: fixed;
+  transform: translate(510px, 250px);
+}
+
+.pre_track{
+  width: 40px;
+  height: 80px;
+  background: rgba(255,0,0,0.1);
+  position: fixed;
+  transform: translate(490px, 158px) rotateZ(-25deg);
+}
+
+.next_track{
+  width: 40px;
+  height: 80px;
+  background: rgba(255,0,0,0.1);
+  position: fixed;
+  transform: translate(492px, 360px) rotateZ(25deg);
+}
+
+.reload_track{
+  width: 40px;
+  height: 60px;
+  background: rgba(255,0,0,0.1);
+  position: fixed;
+  transform: translate(400px, 360px) rotateZ(30deg);
+}
+
+.random_track{
+  width: 40px;
+  height: 60px;
+  background: rgba(255,0,0,0.5);
+  position: fixed;
+  transform: translate(400px, 180px) rotateZ(-30deg);
+}
+
+.toggle_tracklist{
+  width: 40px;
+  height: 95px;
+  background: rgba(0,255,0,0.2);
+  position: fixed;
+  transform: translate(425px, 250px);
+}
+
+.toggle_cam{
+  width: 40px;
+  height: 95px;
+  background: rgba(0,0,255,0.5);
+  position: fixed;
+  transform: translate(300px, 85px) rotateZ(-72deg);
+}
+
+.toggle_back{
+  width: 40px;
+  height: 95px;
+  background: rgba(0,0,255,0.5);
+  position: fixed;
+  transform: translate(100px, 365px) rotateZ(-40deg);
+}
+
+.player_ .media_ .timeline_ {
+ display: inline-grid;
+ grid-template-columns: 4rem auto 4rem;
+ color: white;
+ border: 1px solid rgba(0, 100, 0, 0.8);
+ border-radius: 100%;
+ position: absolute;
+ bottom: 3%;
+ left: 13%;
+ width: 350px;
+ height: 32px;
+}
+
+.current-time{
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  padding-top: 8px;
+  color: white;
+  text-align: center;
+}
+
+.total-duration{
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  padding-top: 8px;
+  color: white;
+  text-align: center;
+}
+
+.timeline_slider {
+  border: 1px solid rgba(0, 100, 0, 0.8);
+  background-color: rgba(0,0,0,100);
+  height: 50%;
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 6px 6px rgba(10,10,10,0.4);
+}
+
+.progress {
+  background-color: rgba(255, 255, 255,  0.1);
+  width: 0%;
+  height: 38%;
+  margin-top: 5px;
+  border-radius: 80%;
+}
+
+/* .timeline_slider {
+  border: 1px solid rgba(0, 100, 0, 0.8);
+  background-color: rgba(0,0,0,100);
+  height: 50%;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 6px 6px rgba(10,10,10,0.4);
+}
+
+.progress {
+  border: 1px solid rgba(0, 100, 0, 0.8);
+  background-color: rgba(255, 255, 255,  0.5);
+  width: 0%;
+  height: 38%;
+  margin-top: 6px;
+  border-radius: 80%;
+}
+
+
+.tracklist {
+  position: absolute;
+  visibility:hidden;
+}
+
+.tracklist.active {
+  position: absolute;
+  visibility:visible;
+  z-index: 3;
+  text-align: center;
+  margin-left: 50%;
+  font-size: 3rem;
+  list-style-type:none;
+} */
