@@ -13,7 +13,7 @@ const env = cubeTextureLoader.load([
 
 
 const dracoLoader = new THREE.DRACOLoader;
-dracoLoader.setDecoderPath('threejs/examples/js/libs/draco/');
+dracoLoader.setDecoderPath('thrjs/draco/');
 
 const loader = new THREE.GLTFLoader();
 loader.setDRACOLoader(dracoLoader);

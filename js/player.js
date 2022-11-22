@@ -31,7 +31,7 @@ const trackList = [
   },
   {
     title: "SEXO ANAL",
-    author: "ZombieGirlfriend",
+    author: "ZGF",
     file: "SEXO ANAL - ZGF.mp3",
     url: "https://soundcloud.com/xyxx6000"
   }
@@ -41,14 +41,15 @@ const tracks = document.querySelector(".tracklist");
 const audio = document.querySelector(".audio");
 const audio_name = document.querySelector(".track_name");
 
-const button_menu = document.querySelector(".toggle_tracklist");
-const track_menu = document.querySelector(".tracklist");
-
 const play_button = document.querySelector(".play_stop_button");
+const play_icon = document.getElementById("play");
 const pre_button  = document.querySelector(".pre_track");
 const next_button = document.querySelector(".next_track");
 const reload_button= document.querySelector(".reload_track");
 const random_button= document.querySelector(".random_track");
+const skin_button = document.querySelector(".skin_");
+
+const player = document.querySelector(".media_");
 
 const audio_current_time = document.querySelector(".current-time");
 const audio_total_time = document.querySelector(".total-duration");
@@ -62,63 +63,69 @@ let current_track = null;
 //Load Source
 
 
-function defaultTrack(trackIndex){
-  play_button.classList.add("active");
-  current_track = trackIndex;
-  audio.src = "audio/cyberixComp/" + trackList[trackIndex].file;
-  changeTitle(trackIndex);
-  x(null, null);
-}
+// function defaultTrack(trackIndex){
+//   play_button.classList.add("active");
+//   current_track = trackIndex;
+//   audio.src = "audio/cyberixComp/" + trackList[trackIndex].file;
+//   changeTitle(trackIndex);
+//   x(0, 0);
+// }
 
 function loadTracks(){
   trackList.forEach((track, index) => {
 
     const li = document.createElement("li");
     const link = document.createElement("a");
-    const icon = document.createElement("iframe");
-
-    icon.src = "https://w.soundcloud.com/icon/?url=" + track.url + "&color=black_white&size=10";
-    icon.className = 'sc_icon';
-    icon.allowtransparency="true";
-    icon.scrolling="false";
-    icon.frameborder="0";
+    // const icon = document.createElement("iframe");
+    //
+    // icon.src = "https://w.soundcloud.com/icon/?url=" + track.url + "&color=black_white&size=10";
+    // icon.className = 'sc_icon';
+    // icon.allowtransparency="true";
+    // icon.scrolling="false";
+    // icon.frameborder="0";
 
 
     link.classList.add('tracks');
     link.textContent = track.title + " by " + track.author;
     link.href = "#";
+    // link.target = "_blank";
     link.addEventListener("click", () => loadTrack(index));
     li.appendChild(link);
-    link.appendChild(icon);
+    // link.appendChild(icon);
     tracks.appendChild(li);
+    console.log(track.title + " : " + index );
   });
+}
+
+function pointerToTrack(n, m){
+  const l = document.getElementsByClassName('tracks');
+  if(m != null){
+    l[m].classList.add('active');
+    if(n != null){
+      l[n].classList.remove('active');
+    }
+  }
 }
 
 function loadTrack(trackIndex){
   const l = document.getElementsByClassName('tracks');
   if(current_track !== trackIndex){
-    x(current_track, trackIndex);
+    pointerToTrack(current_track, trackIndex);
     current_track = trackIndex;
     audio.src = "/audio/cyberixComp/" + trackList[trackIndex].file;
     changeTitle(trackIndex);
     audio_current_time.innerText = "00:00";
     audio_total_time.innerText = audio.duration;
     changeMediaButton();
+    track_menu.classList.remove('active')
   }
 }
 
-function x(n, m){
-  const l = document.getElementsByClassName('tracks');
-  l[m].classList.add('active');
-  l[n].classList.remove('active');
-}
+
 
 window.addEventListener('load', function(){
   loadTracks();
-  defaultTrack(0);
 });
-
-
 
 let convertTime = function(time)
 {
@@ -166,7 +173,9 @@ function updateProgress(event){
 
 
 function changeTitle(index){
-  audio_name.innerText = trackList[index].title;
+  audio_name.innerText = trackList[index].title + " - " + trackList[index].author ;
+  audio_name.href = trackList[index].url;
+  audio_name.target = "_blank";
 }
 
 audio.addEventListener('ended', function(){
@@ -185,12 +194,14 @@ play_button.addEventListener('click', changeMediaButton);
 
 function changeMediaButton(){
   // updateControls();
-  if(audio.paused){
+  if(audio.paused && current_track !== null){
     audio.play();
-    play_button.style.backgroundImage = "url('img/stop3.png')";
+    play_icon.classList.add('bx-stop');
+    play_icon.classList.remove('bx-play');
   }else{
     audio.pause();
-    play_button.style.backgroundImage = "url('img/play3.png')";
+    play_icon.classList.remove('bx-stop');
+    play_icon.classList.add('bx-play');
   }
 
 }
@@ -236,9 +247,31 @@ random_button.onclick = function() {
   }
 }
 
-button_menu.onclick = function() {
-  track_menu.classList.toggle("active");
+const skins = [
+  {
+    name : 'device_vertical_pink'
+  },
+  {
+    name : 'device_vertical_white',
+  },
+  {
+    name : 'device_vertical_gray',
+  }
+];
+
+var n = 0;
+
+skin_button.onclick = function() {
+
+  if(n >= skins.length){
+    n = 0;
+  }
+  var path = "url('/img/" + skins[n].name + ".png')";
+  player.style.backgroundImage = path;
+  // console.log(path);
+  n++;
 };
+
 
 window.addEventListener('keydown', function(e){
   if(e.code == 'ShiftRight' || e.code == 'ShiftLeft'){

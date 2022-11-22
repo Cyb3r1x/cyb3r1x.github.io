@@ -1,6 +1,4 @@
-const load = document.querySelector('.load_page');
-const load_audio = document.querySelector('.load_page_audio');
-const load_audio2 = document.querySelector('.onloadpage');
+
 
 const can = document.getElementById("three_canvas");
 const scene = new THREE.Scene();
@@ -33,15 +31,12 @@ window.addEventListener('resize', function(){
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio( window.devicePixelRatio );
   // console.log(window.innerHeight);
+  load.width = window.innerWidth;
+  load.height = window.innerHeight;
 });
 
 var clock = new THREE.Clock();
 
-
-load.addEventListener('click', function(){
-  load.classList.toggle('active');
-  load_audio.play();
-});
 
 function timer(n){
   if(clock.getElapsedTime() >= n){

@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{Cyberix}</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="/img/player_favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.145.0/three.min.js" integrity="sha512-mElAVmOZp/n8OKao194p++kIARCbLKnf/pdVTVI+ZkxL0Rmyw6p5C4kcLd67l2WdvfyBqFe6dI4lR3m++xhdnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/hydra-synth"></script>
-    <link rel="stylesheet" href="style.css">
     <script src="thrjs/OrbitControls.js"></script>
     <script src="thrjs/GLTFLoader.js"></script>
     <script src="thrjs/DRACOLoader.js"></script>
@@ -14,61 +16,78 @@
     <style>
       @font-face {
         font-family: 'xxx';
-        src: url('fonts/Crux.otf');
+        src: url('fonts/xxx.otf');
       }
     </style>
+
+
   </head>
   <body>
 
   <div class="load_page">
-    <a class="startpage_banner" data1="Cyberix by" data2="dataleakage"> Cyberix  by dataleakage</a>
+    <div class="image_banner"></div>
+    <a class="startpage_banner" data1="Cyberix" data2=" by dataleakage"
+     href="https://www.instagram.com/_data.leakage_/"
+     target="_blank"
+     >by dataleakage</a>
   </div>
 
-  <ul class="tracklist"></ul>
+  <div class="tracklist_back">
+    <ul class="tracklist"></ul>
+  </div>
+
+  <div class="tracklist_button"></div>
+
   <audio src="" class="audio"></audio>
   <audio src="audio/e01-1.mp3" class="load_page_audio"></audio>
   <audio src="audio/e02-1.mp3" class="camera_audio"></audio>
-
 
   <div class="player_">
     <div class="media_">
 
       <div class="buttons_">
-        <div class="button play_stop_button"></div>
-        <div class="button pre_track"></div>
-        <div class="button next_track"></div>
-        <div class="button reload_track"></div>
-        <div class="button random_track"></div>
+        <div class="button play_stop_button">
+          <i id= "play" class='bx bx-play' ></i>
+        </div>
+        <div class="button pre_track">
+          <i class='bx bx-skip-previous' ></i>
+        </div>
+        <div class="button next_track">
+          <i class='bx bx-skip-next'></i>
+        </div>
+        <div class="button reload_track">
+          <i class='bx bx-reply'></i>
+        </div>
+        <div class="button random_track">
+          <i class='bx bx-shuffle'></i>
+        </div>
         <div class="button toggle_tracklist"></div>
         <div class="button toggle_cam"></div>
         <div class="button toggle_back"></div>
+        <div class="button skin_"></div>
         <div class="tracklist_">
           <div class="panel_button">
             <i class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
-
-      <div class="timeline_">
-        <div class="current-time">00:00</div>
-          <div class="timeline_slider">
-            <section class="progress"></section>
-          </div>
-        <div class="total-duration">00:00</div>
-      </div>
-
-      <canvas id="hydra_canvas_2"></canvas>
-
-      <div class="banner">
-        <a class="track_name"></a>
-      </div>
     </div>
+    <canvas id="hydra_canvas_2"></canvas>
   </div>
-  <!-- <canvas class="freqMonitor"></canvas>
-  <script src="js/analyser.js"></script> -->
+
+  <div class="timeline_">
+    <div class="current-time">00:00</div>
+      <div class="timeline_slider">
+        <section class="progress"></section>
+      </div>
+    <div class="total-duration">00:00</div>
+  </div>
+
+  <div class="banner">
+    <a class="track_name">xxx</a>
+  </div>
 
   <script src="js/player.js"></script>
-
 
   <canvas id="hydra_canvas"></canvas>
   <script src="js/media_hydra.js"></script>
@@ -78,6 +97,8 @@
   <script src="js/load-model.js"></script>
   <script type="text/javascript" src="/js/raycast.js"></script>
 
+  <canvas id="freqMonitor"></canvas>
+  <script src="js/analyser.js"></script>
 
   </body>
 </html>
