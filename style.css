@@ -34,8 +34,8 @@ html * {
     height: 162px;
     border-radius: 100%;
     position: fixed;
-    top: 86px;
-    left: 108px;
+    top: 83px;
+    left: 105px;
     z-index: 5;
     filter: drop-shadow(0px 0px 35px  rgba(0,0,0,1));
   }
@@ -251,21 +251,20 @@ html * {
 }
 
 .media_ {
-  width: 380px;
+  width: 370px;
   height: 100%;
   background-image: url('/img/device_vertical_gray.png');
   background-size: contain;
   background-repeat: no-repeat;
   align-items: center;
-  background-color:rgba(255,0,0,0.3);
 }
 
 .play_stop_button{
   width: 55px;
-  height: 25px;
+  height: 20px;
   background: rgba(255,0,0,0);
   position: fixed;
-  transform: translate(163px, 328px);
+  transform: translate(159px, 320px);
 }
 
 .play_stop_button i{
@@ -276,65 +275,65 @@ html * {
 }
 
 .pre_track{
-  width: 55px;
-  height: 25px;
+  width: 50px;
+  height: 20px;
   background: rgba(255,50,0,0);
   position: fixed;
-  transform: translate(98px, 312px) rotateZ(25deg);
+  transform: translate(98px, 305px) rotateZ(25deg);
 }
 
 .pre_track i{
   background: rgba(255,50,0,0);
   position: fixed;
   margin-left: 35%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .next_track{
-  width: 55px;
-  height: 25px;
+  width: 50px;
+  height: 20px;
   background: rgba(255,0,0,0);
   position: fixed;
-  transform: translate(228px, 312px) rotateZ(-25deg);
+  transform: translate(225px, 305px) rotateZ(-29deg);
 }
 
 .next_track i{
   background: rgba(255,50,0,0);
   position: fixed;
-  margin-left: 35%;
-  margin-top: 7%;
+  margin-left: 32%;
+  margin-top: 4%;
 }
 
 .reload_track{
-  width: 45px;
+  width: 30px;
   height: 25px;
   background: rgba(255,0,0,0);
   position: fixed;
-  transform: translate(110px, 255px) rotateZ(30deg);
+  transform: translate(115px, 247px) rotateZ(30deg);
 }
 
 .reload_track i{
   background: rgba(255,0,0,0);
   position: fixed;
-  margin-left: 32%;
-  margin-top: 6%;
+  margin-left: 22%;
+  margin-top: 10%;
   color: gray;
   font-size: 17px;
 }
 
 .random_track{
-  width: 45px;
+  width: 30px;
   height: 25px;
   background: rgba(255,0,0,0);
   position: fixed;
-  transform: translate(230px, 255px) rotateZ(-30deg);
+  transform: translate(228px, 246px) rotateZ(-30deg);
 }
 
 .random_track i{
   background: rgba(255,0,0,0);
   position: fixed;
   margin-left: 35%;
-  margin-top: 8%;
+  margin-top: 20%;
   color: gray;
   font-size: 12px;
 }
@@ -350,10 +349,10 @@ html * {
 
 .toggle_cam{
   width: 60px;
-  height: 25px;
+  height: 20px;
   background: rgba(0,255,0,0);
   position: fixed;
-  transform: translate(162px, 270px);
+  transform: translate(157px, 265px);
 }
 
 .toggle_back{
@@ -370,7 +369,7 @@ html * {
   height: 25px;
   background: rgba(255,0,0,0);
   position: fixed;
-  transform: translate(92px, 65px) rotateZ(-38deg);
+  transform: translate(88px, 60px) rotateZ(-38deg);
 }
 
 .timeline_ {
