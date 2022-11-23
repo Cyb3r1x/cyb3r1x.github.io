@@ -105,7 +105,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -583,7 +594,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -1072,7 +1094,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -1552,7 +1585,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -2031,7 +2075,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -2514,7 +2569,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -2996,7 +3062,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -3480,7 +3557,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -3963,7 +4051,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -4465,7 +4564,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -4956,7 +5066,18 @@ html * {
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
@@ -5435,14 +5556,25 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 0%;
-    width: 25%;
+    margin-top: 5%;
+    width: 90%;
     height: 90%;
     visibility: visible;
     background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
     filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
+  }
+
+  .image_banner_button{
+    position:relative;
+    width: 90%;;
+    height: 13%;
+    bottom: 20%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    margin: auto;
   }
 
   .image_banner.active {
