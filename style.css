@@ -88,7 +88,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -98,14 +98,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -113,7 +113,6 @@ html * {
   }
 
   .load_page a{
-    /* display: block; */
     z-index: 5;
     position: absolute;
     font-size: 3rem;
@@ -567,7 +566,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -577,14 +576,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -1046,7 +1045,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -1056,7 +1055,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -1066,14 +1065,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -1536,7 +1535,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -1546,14 +1545,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -2015,7 +2014,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -2025,14 +2024,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -2498,7 +2497,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -2508,14 +2507,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -2980,7 +2979,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -2990,14 +2989,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -3464,7 +3463,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -3474,14 +3473,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -3947,7 +3946,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -3957,14 +3956,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -4449,7 +4448,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -4459,14 +4458,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -4940,7 +4939,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -4950,14 +4949,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     width: 90%;
-    height: 60%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
@@ -5426,7 +5425,7 @@ html * {
     position:fixed;
     width: 100%;
     height: 100%;
-    background-color:rgba(0,0,0,0.98);
+    background-color:rgba(0,0,0,1);
     z-index: 7;
     visibility: visible;
     transition: visibility 1s linear, opacity 1s;
@@ -5436,14 +5435,14 @@ html * {
     position:relative;
     text-align: center;
     margin: auto;
-    margin-top: 5%;
-    width: 30%;
-    height: 60%;
+    margin-top: 0%;
+    width: 25%;
+    height: 90%;
     visibility: visible;
-    background-image: url('/img/title_tracklist.png');
+    background-image: url('/img/welcome_title.png');
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.5)) invert(7%) contrast(1.5);
+    filter: drop-shadow(0px 0px 15px  rgba(0,100,90,0.7)) invert(8%) contrast(1.5);
   }
 
   .image_banner.active {
