@@ -15,6 +15,7 @@ let barHeight;
 
 const set = document.querySelector('.load_page');
 const image = document.querySelector('.image_banner');
+const contact = document.querySelector('.image_banner_button');
 
 const load = document.querySelector('.load_page');
 const load_audio = document.querySelector('.load_page_audio');
@@ -86,6 +87,10 @@ load.addEventListener('click', function(){
   load.classList.toggle('active');
   image.classList.toggle('active');
   load_audio.play();
+});
+
+contact.addEventListener('click', function(){
+  window.open('https://www.instagram.com/_data.leakage_/', '_blank');
 });
 
 update();
