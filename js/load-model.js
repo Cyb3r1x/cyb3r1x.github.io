@@ -1,15 +1,15 @@
 
 const substance = new THREE.Group();
 
-const cubeTextureLoader = new THREE.CubeTextureLoader();
-const env = cubeTextureLoader.load([
-  'img/Modelos de prueba/envMap/px.jpg',
-  'img/Modelos de prueba/envMap/nx.jpg',
-  'img/Modelos de prueba/envMap/py.jpg',
-  'img/Modelos de prueba/envMap/ny.jpg',
-  'img/Modelos de prueba/envMap/pz.jpg',
-  'img/Modelos de prueba/envMap/nz.jpg'
-]);
+// const cubeTextureLoader = new THREE.CubeTextureLoader();
+// const env = cubeTextureLoader.load([
+//   'img/Modelos de prueba/envMap/px.jpg',
+//   'img/Modelos de prueba/envMap/nx.jpg',
+//   'img/Modelos de prueba/envMap/py.jpg',
+//   'img/Modelos de prueba/envMap/ny.jpg',
+//   'img/Modelos de prueba/envMap/pz.jpg',
+//   'img/Modelos de prueba/envMap/nz.jpg'
+// ]);
 
 
 const dracoLoader = new THREE.DRACOLoader;
@@ -51,35 +51,35 @@ mouseMovement();
 
 
 
-const texture = new THREE.CanvasTexture( generateTexture() );
-    texture.magFilter = THREE.NearestFilter;
-    texture.wrapT = THREE.RepeatWrapping;
-    texture.wrapS = THREE.RepeatWrapping;
-    texture.repeat.set( 1, 3.5 );
+// const texture = new THREE.CanvasTexture( generateTexture() );
+//     texture.magFilter = THREE.NearestFilter;
+//     texture.wrapT = THREE.RepeatWrapping;
+//     texture.wrapS = THREE.RepeatWrapping;
+//     texture.repeat.set( 1, 3.5 );
 
-function generateTexture() {
-    const canvas = document.createElement( 'canvas' );
-    canvas.width = 2;
-    canvas.height = 2;
-    const context = canvas.getContext( '2d' );
-    context.fillStyle = 'white';
-    context.fillRect( 0, 1, 2, 1 );
-    return canvas;
-}
+// function generateTexture() {
+//     const canvas = document.createElement( 'canvas' );
+//     canvas.width = 2;
+//     canvas.height = 2;
+//     const context = canvas.getContext( '2d' );
+//     context.fillStyle = 'white';
+//     context.fillRect( 0, 1, 2, 1 );
+//     return canvas;
+// }
 
 
 const materialx = new THREE.MeshPhysicalMaterial( {
     color: 0xffffff,
     metalness: 1,
-    roughness: 0,
-    ior: 5,
-    alphaMap: texture,
-    envMap: env,
-    envMapIntensity: 0.3,
-    transmission: 0.5, // use material.transmission for glass materials
-    specularIntensity: 1,
+    roughness: 0.5,
+    ior: 0,
+//     alphaMap: texture,
+//     envMap: env,
+//     envMapIntensity: 0.3,
+    transmission: 0.2, // use material.transmission for glass materials
+    specularIntensity: 0.8,
     specularColor: 0xffffff,
-    opacity: 0.7,
+    opacity: 0.2,
     side: THREE.DoubleSide,
     transparent: true
 });
