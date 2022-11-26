@@ -241,7 +241,7 @@ html * {
   position: fixed;
   width: 100%;
   height: 100%;
-  color: green;
+  color: blue;
   overflow: hidden;
   background-color: rgba(0,0,0,0.9);
   text-align: center;
@@ -261,7 +261,6 @@ html * {
 .tracklist a.active {
   text-decoration: none;
   color: black;
-  font-size:2.8rem;
   font-family: 'xxx';
   overflow: hidden;
 }
@@ -586,8 +585,7 @@ html * {
 
 .play_stop_button i{
   background: rgba(255,0,0,0);
-  margin-top: 4.7px;
-  margin-left: -1.2px;
+  margin-top: 3px;
   font-size: 13px;
 }
 
@@ -954,12 +952,12 @@ html * {
 @media only screen and (max-width:  775px) and (min-width: 675px){
 
   #hydra_canvas_2 {
-    width: 230px;
-    height: 230px;
+    width: 258px;
+    height: 258px;
     border-radius: 100%;
     position: fixed;
-    top: 121px;
-    left: 152px;
+    top: 136px;
+    left: 170px;
     z-index: 5;
     filter: drop-shadow(0px 0px 35px  rgba(0,0,0,1));
   }
@@ -1090,12 +1088,149 @@ html * {
 @media only screen and (max-width:  875px) and (min-width: 775px){
 
   #hydra_canvas_2 {
-    width: 230px;
-    height: 230px;
+    width: 259px;
+    height: 259px;
     border-radius: 100%;
     position: fixed;
-    top: 121px;
-    left: 152px;
+    top: 134px;
+    left: 170px;
+    z-index: 5;
+    filter: drop-shadow(0px 0px 35px  rgba(0,0,0,1));
+  }
+
+.player_ {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.media_ {
+  position:relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  height: 600px;
+  width: 600px;
+  visibility: visible;
+  background-image: url('/img/device_vertical_gray.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
+}
+
+.play_stop_button{
+  position:fixed;
+  width: 90px;
+  height: 30px;
+  background-color: rgba(255,0,0,0);
+  transform: translate(257px, 520px);
+}
+
+.play_stop_button i{
+  background: rgba(255,0,0,0);
+  margin-top: 6px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.pre_track{
+  width: 75px;
+  height: 28px;
+  background: rgba(255,50,0,0);
+  position: fixed;
+  transform: translate(162px, 496px) rotateZ(29deg);
+}
+
+.pre_track i{
+  background: rgba(255,50,0,0);
+  margin-top: 5px;
+  margin-left: 4px;
+  font-size: 20px;
+}
+
+.next_track{
+  width: 70px;
+  height: 28px;
+  background: rgba(255,0,0,0);
+  position: fixed;
+  transform: translate(367px, 498px) rotateZ(-30deg);
+}
+
+.next_track i{
+  background: rgba(255,50,0,0);
+  margin-top: 5px;
+  margin-left: 3px;
+  font-size: 20px;
+}
+
+.reload_track{
+  width: 38px;
+  height: 38px;
+  background: rgba(255,0,0,0);
+  position: fixed;
+  transform: translate(192px, 402px) rotateZ(30deg);
+}
+
+.reload_track i{
+  background: rgba(255,0,0,0);
+  margin-top: 7px;
+  color: gray;
+  font-size: 23px;
+}
+
+.random_track{
+  width: 38px;
+  height: 38px;
+  background: rgba(255,0,0,0);
+  position: fixed;
+  transform: translate(375px, 400px) rotateZ(-30deg);
+}
+
+.random_track i{
+  background: rgba(255,0,0,0);
+  margin-top: 10px;
+  margin-left: 3px;
+  color: gray;
+  font-size: 18px;
+}
+
+.toggle_cam{
+  width: 100px;
+  height: 30px;
+  background: rgba(0,255,0,0);
+  position: fixed;
+  transform: translate(253px, 432px);
+}
+
+.skin_{
+  width: 100px;
+  height: 30px;
+  background: rgba(255,0,0,0);
+  position: fixed;
+  transform: translate(140px, 105px) rotateZ(-37deg);
+}
+
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width:  975px) and (min-width: 875px){
+
+  #hydra_canvas_2 {
+    width: 259px;
+    height: 259px;
+    border-radius: 100%;
+    position: fixed;
+    top: 134px;
+    left: 170px;
     z-index: 5;
     filter: drop-shadow(0px 0px 35px  rgba(0,0,0,1));
   }
@@ -1253,7 +1388,7 @@ html * {
 //////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////// */
 
-@media only screen and (min-width: 1200px) and (min-height: 640px){
+@media only screen and (min-width: 1000px) and (min-height: 640px){
   #three_canvas {
     position: absolute;
     z-index: 0;
@@ -1269,15 +1404,14 @@ html * {
   }
 
   #hydra_canvas_2 {
-    width: 253px;
-    height: 253px;
+    width: 260px;
+    height: 260px;
     border-radius: 100%;
     position: fixed;
-    top: 179px;
-    left: 213.5px;
+    top: 135px;
+    left: 170px;
     z-index: 5;
     filter: drop-shadow(0px 0px 35px  rgba(0,0,0,1));
-
   }
 
 
@@ -1636,7 +1770,7 @@ html * {
   height: 95%;
   color: blue;
   overflow: hidden;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0,0,0,0.8);
   text-align: center;
   list-style-type: none;
   border-bottom-left-radius: 5%;
@@ -1655,7 +1789,7 @@ html * {
 
 .tracklist a.active {
   text-decoration: none;
-  color: red;
+  color: black;
   font-family: 'xxx';
   overflow: hidden;
 }
