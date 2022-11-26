@@ -303,7 +303,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -437,7 +437,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -570,7 +570,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -705,7 +705,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -842,7 +842,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -979,7 +979,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -1115,7 +1115,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
@@ -1417,7 +1417,7 @@ html * {
   background-size: contain;
   background-repeat: no-repeat;
   align-items: center;
-  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5)) contrast(1.2);
+  filter: drop-shadow(0px 0px 15px  rgba(100,100,100,0.5));
 }
 
 .play_stop_button{
